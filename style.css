@@ -650,3 +650,803 @@ ul {
     color: #444;
     font-family: "Figtree", sans-serif;
 }
+
+/* Common styles */
+
+/* Center Detail Page Styles */
+.center-detail-container {
+    padding: 2rem 0;
+}
+
+.breadcrumb ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.center-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.center-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.center-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Mental Health Page Styles */
+.mental-health-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/mental-health-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.conditions .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.treatment-approaches .treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.crisis-support {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Addiction Page Styles */
+.addiction-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/addiction-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.treatment-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/about-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.mission-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Favorites Page Styles */
+.favorites-container {
+    padding: 2rem 0;
+}
+
+.favorites-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.comparison-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+/* Add to existing CSS */
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #232452;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #232452;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    display: flex;
+    opacity: 1;
+}
+
+/* Hero Section Improvements */
+.hero-section {
+    min-height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 65px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(35, 36, 82, 0.95), rgba(35, 36, 82, 0.7));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Modern Card Improvements */
+.modern-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.modern-card .card-image {
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+.modern-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modern-card .card-content {
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modern-card .card-title {
+    font-size: 1.75rem;
+    color: #232452;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.modern-card .card-text {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #232452;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+/* Treatment Cards Layout */
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+
+.treatment-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-card i {
+    font-size: 3rem;
+    color: #232452;
+    margin-bottom: 2rem;
+}
+
+.treatment-card h3 {
+    font-size: 1.75rem;
+    color: #232452;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.treatment-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.treatment-card li {
+    padding: 0.75rem 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.treatment-card li::before {
+    content: '•';
+    color: #232452;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Resource Section Layout */
+.resources-section {
+    padding: 5rem 0;
+    background: #f8f9fc;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.resource-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card i {
+    font-size: 3.5rem;
+    color: #232452;
+    margin-bottom: 2rem;
+}
+
+.resource-card h3 {
+    font-size: 1.75rem;
+    color: #232452;
+    margin-bottom: 1.25rem;
+}
+
+.resource-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2.5rem;
+    color: #232452;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #232452;
+    border-radius: 2px;
+}
+
+/* Contact Form Improvements */
+.contact-form {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #232452;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid #e1e1e8;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #232452;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(35, 36, 82, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn.primary {
+    background: #232452;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #1a1b3d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(35, 36, 82, 0.2);
+}
+
+.btn.secondary {
+    background: #E6E4FF;
+    color: #232452;
+}
+
+.btn.secondary:hover {
+    background: #d1ceff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(35, 36, 82, 0.1);
+}
+
+/* Center Detail Page Improvements */
+.center-detail-hero {
+    min-height: 500px;
+    padding: 4rem 0;
+    margin-top: 65px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.center-detail-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(35, 36, 82, 0.8), rgba(35, 36, 82, 0.4));
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb i {
+    margin: 0 0.75rem;
+    font-size: 0.8rem;
+}
+
+.center-header {
+    margin-bottom: 2rem;
+}
+
+.center-header h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.verified {
+    color: #4CAF50;
+    font-size: 1.5rem;
+}
+
+.center-meta {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.meta-item i {
+    font-size: 1.25rem;
+}
+
+/* Content Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.gallery-main {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gallery-thumbs img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-thumbs img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 4rem;
+}
+
+.reviews-summary {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.rating-big {
+    text-align: center;
+}
+
+.rating-big .number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #232452;
+    line-height: 1;
+}
+
+.rating-big .stars {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.review-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar Improvements */
+.sidebar > div {
+    margin-bottom: 2rem;
+}
+
+.sidebar .contact-card,
+.sidebar .insurance-card,
+.sidebar .location-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #232452;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 1200px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .center-meta {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .center-header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .gallery-thumbs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .meta-item {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+}
+
+/* Loading and Transition States */
+.loading {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.loaded {
+    opacity: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232452;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a1b3d;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Centers - Recovery.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Same navbar as other pages -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/green-logo.png" alt="">
+                        Recovery.com
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search..." />
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <ul class="navbar1">
+                        <li><a href="addiction.html">Addiction <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="mental-health.html">Mental Health <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="favorites.html"><i class="far fa-heart heart-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="favorites-container">
+        <div class="container">
+            <div class="favorites-header" data-aos="fade-up">
+                <h1><i class="far fa-heart"></i> Saved Treatment Centers</h1>
+                <p>Compare and manage your saved treatment centers. Contact facilities directly or request more information.</p>
+            </div>
+
+            <div class="saved-centers">
+                <!-- Empty state -->
+                <div class="empty-state" id="emptyState" style="display: none;" data-aos="fade-up">
+                    <div class="empty-state-content">
+                        <i class="far fa-heart"></i>
+                        <h2>No Saved Centers Yet</h2>
+                        <p>Save treatment centers by clicking the heart icon on center listings to compare them later.</p>
+                        <a href="index.html" class="btn primary">Browse Centers</a>
+                    </div>
+                </div>
+
+                <!-- Saved centers list -->
+                <div class="centers-list" data-aos="fade-up">
+                    <div class="list-controls">
+                        <div class="list-actions">
+                            <button class="btn secondary"><i class="fas fa-sort"></i> Sort</button>
+                            <button class="btn secondary"><i class="fas fa-filter"></i> Filter</button>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="btn icon-btn active" data-view="grid"><i class="fas fa-th-large"></i></button>
+                            <button class="btn icon-btn" data-view="list"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="centers-grid">
+                        <!-- Center Card 1 -->
+                        <div class="modern-card center-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-image">
+                                <img src="images/img1-1.webp" alt="Immersion Recovery Center">
+                                <div class="card-badges">
+                                    <span class="badge">Residential</span>
+                                    <button class="btn icon-btn favorite active"><i class="fas fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Immersion Recovery Center</h3>
+                                    <div class="rating">
+                                        <span><i class="fas fa-star"></i> 5.9</span>
+                                        <span class="reviews">(216 reviews)</span>
+                                    </div>
+                                </div>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Delray Beach, FL</p>
+                                <div class="tags">
+                                    <span>Substance Use</span>
+                                    <span>Alcohol</span>
+                                    <span>Drug Addiction</span>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn primary">View Details</button>
+                                    <button class="btn secondary">Compare</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Card 2 -->
+                        <div class="modern-card center-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-image">
+                                <img src="images/img2.jpeg" alt="Recovery Center">
+                                <div class="card-badges">
+                                    <span class="badge">Outpatient</span>
+                                    <button class="btn icon-btn favorite active"><i class="fas fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <h3>Serenity Recovery Center</h3>
+                                    <div class="rating">
+                                        <span><i class="fas fa-star"></i> 4.8</span>
+                                        <span class="reviews">(184 reviews)</span>
+                                    </div>
+                                </div>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Miami, FL</p>
+                                <div class="tags">
+                                    <span>Mental Health</span>
+                                    <span>Dual Diagnosis</span>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn primary">View Details</button>
+                                    <button class="btn secondary">Compare</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison section -->
+                <div class="comparison-section" data-aos="fade-up">
+                    <h2>Compare Treatment Centers</h2>
+                    <p>Select centers above to compare their features, programs, and amenities side by side.</p>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <div class="comparison-header">
+                                <h3>Select Center</h3>
+                                <p>Choose a center to compare</p>
+                            </div>
+                            <div class="comparison-placeholder">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                        <div class="comparison-card">
+                            <div class="comparison-header">
+                                <h3>Select Center</h3>
+                                <p>Choose a center to compare</p>
+                            </div>
+                            <div class="comparison-placeholder">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn primary compare-btn" disabled>Compare Selected Centers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Same footer as other pages -->
+    <footer class="site-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <button class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

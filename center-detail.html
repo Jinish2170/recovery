@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersion Recovery Center - Recovery.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Same navbar as other pages -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/green-logo.png" alt="">
+                        Recovery.com
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search..." />
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <ul class="navbar1">
+                        <li><a href="addiction.html">Addiction <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="mental-health.html">Mental Health <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="about.html">About Us <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="favorites.html"><i class="far fa-heart heart-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="center-detail-hero" style="background-image: url('images/img1-1.webp');">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html">All Centers</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">United States</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Florida</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Immersion Recovery Center</span>
+                </nav>
+                
+                <div class="center-header">
+                    <h1>Immersion Recovery Center <i class="fas fa-check-circle verified"></i></h1>
+                    <div class="center-actions">
+                        <button class="btn primary"><i class="fas fa-envelope"></i> Contact Center</button>
+                        <button class="btn secondary favorite"><i class="far fa-heart"></i> Save</button>
+                    </div>
+                </div>
+
+                <div class="center-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Delray Beach, Florida</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i>
+                        <span>5.9 (216 reviews)</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-award"></i>
+                        <span>Joint Commission Accredited</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Insurance Accepted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-detail-content">
+        <div class="container">
+            <div class="content-grid">
+                <main class="main-content">
+                    <section class="gallery-section" data-aos="fade-up">
+                        <div class="gallery-grid">
+                            <div class="gallery-main">
+                                <img src="images/img1-1.webp" alt="Center Main Image" id="mainImage">
+                            </div>
+                            <div class="gallery-thumbs">
+                                <img src="images/img2.jpeg" alt="Center Image" onclick="changeMainImage(this.src)">
+                                <img src="images/img3.jpeg" alt="Center Image" onclick="changeMainImage(this.src)">
+                                <img src="images/img4.jpeg" alt="Center Image" onclick="changeMainImage(this.src)">
+                                <img src="images/img5.webp" alt="Center Image" onclick="changeMainImage(this.src)">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="overview-section" data-aos="fade-up">
+                        <h2>Overview</h2>
+                        <p>Immersion Recovery Center offers a full continuum of care treating addiction and mental health through an evidence-based approach. Our program combines relapse prevention strategies with holistic healing methods, including beach activities and wellness programs. Located in beautiful Delray Beach, Florida, we provide a serene environment conducive to recovery and personal growth.</p>
+                        
+                        <div class="highlights-grid">
+                            <div class="highlight-card">
+                                <i class="fas fa-user-md"></i>
+                                <h3>Expert Staff</h3>
+                                <p>Board-certified physicians and licensed therapists</p>
+                            </div>
+                            <div class="highlight-card">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h3>Personalized Care</h3>
+                                <p>Customized treatment plans for each client</p>
+                            </div>
+                            <div class="highlight-card">
+                                <i class="fas fa-home"></i>
+                                <h3>Modern Facility</h3>
+                                <p>State-of-the-art amenities and comfortable accommodations</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="treatment-section" data-aos="fade-up">
+                        <h2>Treatment Programs</h2>
+                        <div class="treatment-grid">
+                            <div class="treatment-card">
+                                <i class="fas fa-hospital"></i>
+                                <h3>Medical Detox</h3>
+                                <ul>
+                                    <li>24/7 Medical Supervision</li>
+                                    <li>Comfortable Environment</li>
+                                    <li>Medication Management</li>
+                                    <li>Expert Care Team</li>
+                                </ul>
+                            </div>
+                            <div class="treatment-card">
+                                <i class="fas fa-home"></i>
+                                <h3>Residential Treatment</h3>
+                                <ul>
+                                    <li>Structured Daily Programs</li>
+                                    <li>Individual Therapy</li>
+                                    <li>Group Counseling</li>
+                                    <li>Family Programs</li>
+                                </ul>
+                            </div>
+                            <div class="treatment-card">
+                                <i class="fas fa-brain"></i>
+                                <h3>Dual Diagnosis</h3>
+                                <ul>
+                                    <li>Mental Health Care</li>
+                                    <li>Trauma Treatment</li>
+                                    <li>Anxiety & Depression</li>
+                                    <li>Behavioral Therapy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="amenities-section" data-aos="fade-up">
+                        <h2>Amenities & Features</h2>
+                        <div class="amenities-grid">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>WiFi Access</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Fitness Center</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>Gourmet Meals</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i>
+                                <span>Swimming Pool</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-spa"></i>
+                                <span>Spa Services</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-basketball-ball"></i>
+                                <span>Recreation Areas</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="reviews-section" data-aos="fade-up">
+                        <h2>Client Reviews</h2>
+                        <div class="reviews-summary">
+                            <div class="rating-overview">
+                                <div class="rating-big">
+                                    <span class="number">5.9</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="total">216 reviews</span>
+                                </div>
+                            </div>
+                            <div class="review-cards">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="reviewer">
+                                            <i class="fas fa-user-circle"></i>
+                                            <span>John D.</span>
+                                        </div>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>"The staff here is amazing. They truly care about your recovery and well-being. The facility is beautiful and the program is comprehensive."</p>
+                                </div>
+                                <!-- More review cards -->
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <aside class="sidebar">
+                    <div class="contact-card" data-aos="fade-left">
+                        <h3>Get More Information</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="insurance">Insurance Provider</label>
+                                <input type="text" id="insurance">
+                            </div>
+                            <button type="submit" class="btn primary full-width">Request Information</button>
+                        </form>
+                    </div>
+
+                    <div class="insurance-card" data-aos="fade-left" data-aos-delay="100">
+                        <h3>Verify Insurance Coverage</h3>
+                        <p>Most insurance plans accepted. Verify your coverage instantly.</p>
+                        <button class="btn secondary full-width">Check Insurance</button>
+                        <div class="insurance-logos">
+                            <!-- Insurance provider logos -->
+                        </div>
+                    </div>
+
+                    <div class="location-card" data-aos="fade-left" data-aos-delay="200">
+                        <h3>Location</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Recovery Road<br>Delray Beach, FL 33445</p>
+                        <div class="map-container">
+                            <!-- Map iframe or image -->
+                        </div>
+                        <button class="btn secondary full-width">Get Directions</button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- Same footer as other pages -->
+    <footer class="site-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <button class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
